@@ -1,1 +1,1 @@
-console.log("Olá, mundo do Backstage! ${{name}}");
+console.log('Hello from ${{ values.name }}!');
