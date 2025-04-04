@@ -1,0 +1,33 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: node-basic
+  title: Node.js Basic Project
+  description: Um projeto simples Node.js com README
+spec:
+  owner: equipe-exemplo
+  type: service
+
+  parameters:
+    - title: Informações do projeto
+      required:
+        - nome
+      properties:
+        nome:
+          type: string
+          title: Nome do projeto
+
+  steps:
+    - id: criar-projeto
+      name: Criar diretório do projeto
+      action: fetch:template
+      input:
+        url: ./skeleton
+        targetPath: ./{{ parameters.nome }}
+        values:
+          nome: "{{ parameters.nome }}"
+
+  output:
+    links:
+      - title: Código-fonte gerado
+        url: ./{{ parameters.nome }}
