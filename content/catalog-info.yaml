@@ -3,7 +3,7 @@ kind: Component
 metadata:
   annotations:
     backstage.io/techdocs-ref: value
-  name: meu-template-node-v2
+  name: ${{ values.name | dump }}
 spec:
   type: service
   owner: user:guest
