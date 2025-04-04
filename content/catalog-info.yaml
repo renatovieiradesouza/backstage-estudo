@@ -3,7 +3,7 @@ kind: Component
 metadata:
   annotations:
     backstage.io/techdocs-ref: value
-  name: teste-v2
+  name: renato-nodejs-template
 spec:
   type: service
   owner: user:guest
