@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: template-node-basic
+  title: Node Basic Template
+  description: Um template simples de projeto Node.js
+spec:
+  type: template
+  lifecycle: experimental
+  owner: equipe-exemplo
